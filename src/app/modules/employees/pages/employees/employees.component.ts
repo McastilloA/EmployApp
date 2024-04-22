@@ -6,17 +6,20 @@ import { CardComponent } from '@modules/employees/components/card/card.component
 import { TitleComponent } from '@shared/components/title/title.component';
 
 import { EmployeesService } from '@core/services/employees.service';
+import { LoadingComponent } from '@shared/components/loading/loading.component';
+import { Breakpoint } from '@shared/utils/breakpoint';
 
 @Component({
   selector: 'app-employees',
   standalone: true,
-  imports: [TableComponent, CardComponent, TitleComponent],
+  imports: [TableComponent, CardComponent, TitleComponent, LoadingComponent],
   templateUrl: './employees.component.html',
   styleUrl: './employees.component.css',
 })
 export class EmployeesComponent implements OnInit {
   /** Variables globales */
   service = inject(EmployeesService);
+  breakpoint = inject(Breakpoint);
 
   ngOnInit(): void {
     this.getListEmployees();

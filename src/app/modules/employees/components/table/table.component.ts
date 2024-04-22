@@ -43,7 +43,7 @@ export class TableComponent implements OnChanges {
   /** Variables globales */
   dialog: MatDialog = inject(MatDialog);
   @Input() listEmployees!: Employee[];
-  @Output() onRefreshList = new EventEmitter<boolean>();
+  @Output() refreshList = new EventEmitter<boolean>();
   displayedColumns: string[] = [
     'name',
     'lastName',
@@ -65,8 +65,8 @@ export class TableComponent implements OnChanges {
    * Filtra los datos de la tabla basándose en la entrada del usuario.
    * @param event - El objeto evento desencadenado por la entrada del usuario.
    */
-  applyFilter(event: Event): void {
-    const filteredValue = (event.target as HTMLInputElement).value;
+  filterEmployees(name: Event): void {
+    const filteredValue = (name.target as HTMLInputElement).value;
     this.dataSource.filter = filteredValue.trim().toLowerCase();
 
     if (this.dataSource.paginator) {
@@ -82,11 +82,12 @@ export class TableComponent implements OnChanges {
    */
   openDialog(data: unknown, action: number): void {
     const dialogRef = this.dialog.open(ModalComponent, {
+      panelClass: ['md:w-1/2', 'w-full'],
       data: { data, action },
     });
 
     dialogRef.afterClosed().subscribe(() => {
-      this.onRefreshList.emit();
+      this.refreshList.emit();
     });
   }
 
@@ -125,7 +126,7 @@ export class TableComponent implements OnChanges {
       .subscribe({
         next: (res) => {
           this.#service.successById(res, 'deleted');
-          this.onRefreshList.emit();
+          this.refreshList.emit();
         },
         error: (err) => {
           this.showSpinner = false;

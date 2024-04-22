@@ -1,2 +1,13 @@
 <app-title [tittle]="'Employees'"></app-title>
-<app-table [listEmployees]="service.employees()" (onRefreshList)="refreshList()" />
+
+@defer (when !breakpoint.mobileSignal()) {
+<app-table [listEmployees]="service.employees()" (refreshList)="refreshList()" />
+}@loading {
+<app-loading />
+}
+
+@defer (when breakpoint.mobileSignal()) {
+<app-card [listEmployees]="service.employees()" (refreshList)="refreshList()" />
+}@loading {
+<app-loading />
+}

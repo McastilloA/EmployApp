@@ -52,9 +52,9 @@ export class EmployeesService {
    * @param id - El ID del empleado a eliminar.
    * @returns Un Observable que emite la respuesta de la API, indicando si el empleado fue eliminado con éxito o no.
    */
-  deleteEmployeeById(id: string): Observable<any> {
+  deleteEmployeeById(id: string): Observable<Employee> {
     const url = `${environment.API_URL}/api/v1/employees/${id}`;
-    return this.#http.delete<any>(url);
+    return this.#http.delete<Employee>(url);
   }
 
   /**
@@ -101,7 +101,7 @@ export class EmployeesService {
    * @param err - El objeto de error que se pasa al método.
    * Muestra mensaje con descripción del error.
    */
-  handleError(err: any): void {
+  handleError(err: Error): void {
     this.#message.popupWindow(
       'Oops...',
       `Unexpected error, please contact the technical team, error: ${err.message}`,

@@ -43,7 +43,7 @@ export class Message {
     });
   }
 
-  confirmPopupWindow(title: string, text: string) {
+  confirmPopupWindow() {
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
