@@ -134,6 +134,9 @@ Components the module **Categories**
 Components edit or create the module **Employees**
 ![Image home](src/assets/resources/employee-cre-upd.png)
 
+Components the module **Categories** in mobile
+![Image home](src/assets/resources/mobile.png)
+
 ## 🫡 Commands
 
 |     | Command   | Action                                                                                                                                                            |
