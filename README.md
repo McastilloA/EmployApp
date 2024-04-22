@@ -48,6 +48,7 @@ This project is created for a technical test and was generated with [Angular CLI
 - [**Angular**](https://angular.io/) - An open source framewok developed in TypeScript that is used to build single page applications (SPA), dynamic web applications and mobiles.
 - [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
 - [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [**Angular Material**](https://tailwindcss.com/) - A set of visual components that allows us to develop consistent user interfaces supported by the Angular Team..
 - [**Google fonts**](https://fonts.google.com/) - Self-host fonts in neatly bundled in CDN.
 
 ## 🚀 Getting Started
