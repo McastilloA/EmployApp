@@ -125,13 +125,13 @@ pnpm start
 ## 🤩 Application functionality 
 
 Sections of list of employees of the module **Employees**
-![Image programming](src/assets/resourses/employees.png)
+![Image programming](src/assets/resources/employees.png)
 
 Components the module **Categories**
-![Image home](src/assets/resourses/categories.png)
+![Image home](src/assets/resources/categories.png)
 
 Components edit or create the module **Employees**
-![Image home](src/assets/resourses/employee-cre-upd.png)
+![Image home](src/assets/resources/employee-cre-upd.png)
 
 ## 🫡 Commands
 
