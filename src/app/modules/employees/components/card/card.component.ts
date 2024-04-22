@@ -26,7 +26,7 @@ import { AsyncPipe, NgFor } from '@angular/common';
     LoadingComponent,
     SearchPipe,
     NgFor,
-    AsyncPipe
+    AsyncPipe,
   ],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css',
@@ -55,16 +55,6 @@ export class CardComponent {
   filterEmployees(name: Event): void {
     const filteredValue = (name.target as HTMLInputElement).value;
     this.searchFilter = filteredValue;
-
-    // if (filteredValue !== '') {
-    //   this.listEmployees = this.filterEmployeesByName(filteredValue);
-    // }
-  }
-
-  filterEmployeesByName(name: string): Employee[] {
-    return this.listEmployees.filter((employee) =>
-      employee.name.toLowerCase().includes(name.toLowerCase())
-    );
   }
 
   /**

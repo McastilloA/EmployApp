@@ -118,24 +118,22 @@ pnpm start
 
 4. Open [**http://localhost:4200**](http://localhost:4200/) with your browser to see the result 🚀
 
-<!-- ### 🤝 Contributing
-<a href="https://github.com/McastilloA/sportsBetting/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=midudev/esland-web" />
-</a> -->
-
 ## 🤩 Application functionality 
 
 Sections of list of employees of the module **Employees**
-![Image programming](src/assets/resources/employees.png)
+![Image employees](src/assets/resources/employees.png)
 
 Components the module **Categories**
-![Image home](src/assets/resources/categories.png)
+![Image categories](src/assets/resources/categories.png)
 
 Components edit or create the module **Employees**
-![Image home](src/assets/resources/employee-cre-upd.png)
+![Image employees](src/assets/resources/employee-cre-upd.png)
 
-Components the module **Categories** in mobile
-![Image home](src/assets/resources/mobile.png)
+Components the module **Categories and Employees** in mobile
+
+| Employees in mobile | Create in mobile | Categories in mobile | 
+| :------------------------------ | :------------------------------ | :------------------------------ |
+| ![Image auth](src/assets/resources/mobile.png) | ![Image register](src/assets/resources/mobile2.png) | ![Image register in second form](src/assets/resources/mobile3.png) |
 
 ## 🫡 Commands
 
@@ -143,9 +141,9 @@ Components the module **Categories** in mobile
 | :-- | :-------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ⚙️  | `start`   | Starts local dev server at `localhost:4200`.                                                                                                                      |
 | ⚙️  | `build`   | The build artifacts will be stored in the `dist/` directory.                                                                                                      |
-| ⚙️  | `test`    | execute the unit tests via [Karma](https://karma-runner.github.io).                                                                                               |
+| ⚙️  | `test`    | execute the unit tests via [Karma](https://karma-runner.github.io). |
 | ⚙️  | `e2e`     | execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities. |
-| ⚙️  | `preview` | Preview your build locally, before deploying.                                                                                                                     |
+| ⚙️  | `preview` | Preview your build locally, before deploying. |
 
 ## 💻 Code scaffolding
 
@@ -159,7 +157,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 [MIT](#) - Created by [**@mclasteVerse**](https://github.com/McastilloA).
 
-## ✅ Por hacer...
+## ✅ To be done...
 
 - [ ] Mejorar diseño de la página.
 - [ ] Construir módulos Categories y Users con su respectivo responsivo.
