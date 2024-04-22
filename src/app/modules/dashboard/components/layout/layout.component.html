@@ -1,23 +1,13 @@
-@defer (when breakpoint.mobileSignal()) {
-<app-header />
-<div class="text-black p-5 w-full">
-  <router-outlet />
-</div>
-}@loading {
-<app-loading />
-}
-
-@defer (when !breakpoint.mobileSignal()) {
 <div
-  class="flex bg-slate-100 overflow-y-scroll w-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white">
+  class="flex bg-slate-100 w-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white h-screen sm:h-auto">
   <div class="flex relative w-screen">
+    @defer (when !breakpoint.mobileSignal()) {
     <app-sidemenu />
-
-    <div class="text-black p-5 w-full">
+    }@loading {
+    <app-loading />
+    }
+    <div class="text-black p-5 h-full">
       <router-outlet />
     </div>
   </div>
 </div>
-}@loading {
-<app-loading />
-}

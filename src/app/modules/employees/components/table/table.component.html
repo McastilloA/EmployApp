@@ -24,8 +24,8 @@
   </button>
 </div>
 
-<div class="mat-elevation-z8">
-  <mat-table class="w-full w-" [dataSource]="dataSource">
+<div class="mat-elevation-z8 h-auto">
+  <mat-table class="w-full" [dataSource]="dataSource">
     <ng-container matColumnDef="name">
       <mat-header-cell *matHeaderCellDef> Names </mat-header-cell>
       <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
