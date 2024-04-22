@@ -60,10 +60,10 @@ This project is created for a technical test and was generated with [Angular CLI
 git clone https://github.com/McastilloA/EmployApp.git
 
 # Go to folder with MacOS, WSL & Linux:
-cd employApp
+cd EmployApp
 
 # Go to folder with Windows:
-dir employApp
+dir EmployApp
 ```
 
 2. Install the dependencies, which is installed by default when you download [NodeJS](https://nodejs.org/en)
@@ -133,7 +133,7 @@ Components the module **Categories and Employees** in mobile
 
 | Employees in mobile | Create in mobile | Categories in mobile | 
 | :------------------------------ | :------------------------------ | :------------------------------ |
-| ![Image auth](src/assets/resources/mobile.png) | ![Image register](src/assets/resources/mobile2.png) | ![Image register in second form](src/assets/resources/mobile3.png) |
+| ![Image mobile 1](src/assets/resources/mobile.png) | ![Image mobile 2](src/assets/resources/mobile2.png) | ![Image mobile 3](src/assets/resources/mobile3.png) |
 
 ## 🫡 Commands
 
