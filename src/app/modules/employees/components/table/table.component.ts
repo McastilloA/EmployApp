@@ -82,7 +82,7 @@ export class TableComponent implements OnChanges {
    */
   openDialog(data: unknown, action: number): void {
     const dialogRef = this.dialog.open(ModalComponent, {
-      panelClass: ['sm:w-full', 'w-100'],
+      panelClass: ['w-100'],
       data: { data, action },
     });
 

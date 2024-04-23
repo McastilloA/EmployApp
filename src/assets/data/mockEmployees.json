@@ -1,0 +1,12 @@
+{
+  "mockDialogData": {
+    "data": {
+      "id": "1",
+      "name": "name test",
+      "lastName": "lastName test",
+      "position": "position test",
+      "dateBirth": "00/00/00"
+    },
+    "action": 0
+  }
+}
